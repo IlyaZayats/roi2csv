@@ -1,0 +1,6 @@
+"/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/ilya/CLionProjects/roi2csv -B /Users/ilya/CLionProjects/roi2csv/cmake-build-debug
+-- Trying to find DCMTK expecting DCMTKConfig.cmake
+-- Trying to find DCMTK expecting DCMTKConfig.cmake - ok
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/ilya/CLionProjects/roi2csv/cmake-build-debug

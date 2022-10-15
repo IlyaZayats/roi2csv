@@ -1,0 +1,5 @@
+/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/roi2csv.dir
+/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/roi2csv_autogen_timestamp_deps.dir
+/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/roi2csv_autogen.dir

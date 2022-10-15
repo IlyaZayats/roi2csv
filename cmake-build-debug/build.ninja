@@ -1,0 +1,191 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: roi2csv
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target roi2csv
+
+
+#############################################
+# Order-only phony target for roi2csv
+
+build cmake_object_order_depends_target_roi2csv: phony || roi2csv_autogen roi2csv_autogen/mocs_compilation.cpp roi2csv_autogen/timestamp roi2csv_autogen_timestamp_deps
+
+build CMakeFiles/roi2csv.dir/roi2csv_autogen/mocs_compilation.cpp.o: CXX_COMPILER__roi2csv_Debug /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/roi2csv_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_roi2csv
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/roi2csv.dir/roi2csv_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17
+  INCLUDES = -I/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/roi2csv_autogen/include -I/usr/local/include -iframework /usr/local/Cellar/qt@5/5.15.5_2/lib -isystem /usr/local/Cellar/qt@5/5.15.5_2/lib/QtCore.framework/Headers -isystem /usr/local/Cellar/qt@5/5.15.5_2/./mkspecs/macx-clang
+  OBJECT_DIR = CMakeFiles/roi2csv.dir
+  OBJECT_FILE_DIR = CMakeFiles/roi2csv.dir/roi2csv_autogen
+
+build CMakeFiles/roi2csv.dir/main.cpp.o: CXX_COMPILER__roi2csv_Debug /Users/ilya/CLionProjects/roi2csv/main.cpp || cmake_object_order_depends_target_roi2csv
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/roi2csv.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17
+  INCLUDES = -I/Users/ilya/CLionProjects/roi2csv/cmake-build-debug/roi2csv_autogen/include -I/usr/local/include -iframework /usr/local/Cellar/qt@5/5.15.5_2/lib -isystem /usr/local/Cellar/qt@5/5.15.5_2/lib/QtCore.framework/Headers -isystem /usr/local/Cellar/qt@5/5.15.5_2/./mkspecs/macx-clang
+  OBJECT_DIR = CMakeFiles/roi2csv.dir
+  OBJECT_FILE_DIR = CMakeFiles/roi2csv.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target roi2csv
+
+
+#############################################
+# Link the executable roi2csv
+
+build roi2csv: CXX_EXECUTABLE_LINKER__roi2csv_Debug CMakeFiles/roi2csv.dir/roi2csv_autogen/mocs_compilation.cpp.o CMakeFiles/roi2csv.dir/main.cpp.o | /usr/local/Cellar/qt@5/5.15.5_2/lib/QtCore.framework/QtCore /usr/local/lib/libi2d.16.3.6.6.dylib /usr/local/lib/libdcmjpeg.16.3.6.6.dylib /usr/local/lib/libijg8.16.3.6.6.dylib /usr/local/lib/libijg12.16.3.6.6.dylib /usr/local/lib/libijg16.16.3.6.6.dylib /usr/local/lib/libdcmjpls.16.3.6.6.dylib /usr/local/lib/libdcmtkcharls.16.3.6.6.dylib /usr/local/lib/libcmr.16.3.6.6.dylib /usr/local/lib/libdcmwlm.16.3.6.6.dylib /usr/local/lib/libdcmpstat.16.3.6.6.dylib /usr/local/lib/libdcmrt.16.3.6.6.dylib /usr/local/lib/libdcmseg.16.3.6.6.dylib /usr/local/lib/libdcmtract.16.3.6.6.dylib /usr/local/lib/libdcmpmap.16.3.6.6.dylib /usr/local/lib/libdcmect.16.3.6.6.dylib /usr/local/lib/libdcmtls.16.3.6.6.dylib /usr/local/lib/libdcmsr.16.3.6.6.dylib /usr/local/lib/libdcmimage.16.3.6.6.dylib /usr/local/lib/libtiff.dylib /usr/local/lib/libjpeg.dylib /usr/local/lib/libpng.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libxml2.tbd /usr/local/lib/libdcmdsig.16.3.6.6.dylib /usr/local/opt/openssl@1.1/lib/libssl.dylib /usr/local/opt/openssl@1.1/lib/libcrypto.dylib /usr/local/lib/libdcmqrdb.16.3.6.6.dylib /usr/local/lib/libdcmnet.16.3.6.6.dylib /usr/local/lib/libdcmimgle.16.3.6.6.dylib /usr/local/lib/libdcmfg.16.3.6.6.dylib /usr/local/lib/libdcmiod.16.3.6.6.dylib /usr/local/lib/libdcmdata.16.3.6.6.dylib /usr/local/lib/liboflog.16.3.6.6.dylib /usr/local/lib/libofstd.16.3.6.6.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libiconv.tbd /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libcharset.tbd /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd || roi2csv_autogen roi2csv_autogen_timestamp_deps
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/Cellar/qt@5/5.15.5_2/lib/QtCore.framework/QtCore  /usr/local/lib/libi2d.16.3.6.6.dylib  /usr/local/lib/libdcmjpeg.16.3.6.6.dylib  /usr/local/lib/libijg8.16.3.6.6.dylib  /usr/local/lib/libijg12.16.3.6.6.dylib  /usr/local/lib/libijg16.16.3.6.6.dylib  /usr/local/lib/libdcmjpls.16.3.6.6.dylib  /usr/local/lib/libdcmtkcharls.16.3.6.6.dylib  /usr/local/lib/libcmr.16.3.6.6.dylib  /usr/local/lib/libdcmwlm.16.3.6.6.dylib  /usr/local/lib/libdcmpstat.16.3.6.6.dylib  /usr/local/lib/libdcmrt.16.3.6.6.dylib  /usr/local/lib/libdcmseg.16.3.6.6.dylib  /usr/local/lib/libdcmtract.16.3.6.6.dylib  /usr/local/lib/libdcmpmap.16.3.6.6.dylib  /usr/local/lib/libdcmect.16.3.6.6.dylib  /usr/local/lib/libdcmtls.16.3.6.6.dylib  /usr/local/lib/libdcmsr.16.3.6.6.dylib  /usr/local/lib/libdcmimage.16.3.6.6.dylib  /usr/local/lib/libtiff.dylib  /usr/local/lib/libjpeg.dylib  /usr/local/lib/libpng.dylib  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libxml2.tbd  /usr/local/lib/libdcmdsig.16.3.6.6.dylib  /usr/local/opt/openssl@1.1/lib/libssl.dylib  /usr/local/opt/openssl@1.1/lib/libcrypto.dylib  -ldl  /usr/local/lib/libdcmqrdb.16.3.6.6.dylib  /usr/local/lib/libdcmnet.16.3.6.6.dylib  /usr/local/lib/libdcmimgle.16.3.6.6.dylib  /usr/local/lib/libdcmfg.16.3.6.6.dylib  /usr/local/lib/libdcmiod.16.3.6.6.dylib  /usr/local/lib/libdcmdata.16.3.6.6.dylib  /usr/local/lib/liboflog.16.3.6.6.dylib  /usr/local/lib/libofstd.16.3.6.6.dylib  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libiconv.tbd  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libcharset.tbd  -lpthread  /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd
+  OBJECT_DIR = CMakeFiles/roi2csv.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = roi2csv
+  TARGET_PDB = roi2csv.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/ilya/CLionProjects/roi2csv/cmake-build-debug && "/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/ilya/CLionProjects/roi2csv/cmake-build-debug && "/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ilya/CLionProjects/roi2csv -B/Users/ilya/CLionProjects/roi2csv/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for roi2csv_autogen_timestamp_deps
+
+build roi2csv_autogen_timestamp_deps: phony CMakeFiles/roi2csv_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for roi2csv_autogen
+
+build roi2csv_autogen: phony CMakeFiles/roi2csv_autogen roi2csv_autogen/timestamp roi2csv_autogen/mocs_compilation.cpp roi2csv_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for roi2csv_autogen/timestamp
+
+build roi2csv_autogen/timestamp roi2csv_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}roi2csv_autogen/timestamp ${cmake_ninja_workdir}roi2csv_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/local/Cellar/qt@5/5.15.5_2/bin/moc || roi2csv_autogen_timestamp_deps
+  COMMAND = cd /Users/ilya/CLionProjects/roi2csv/cmake-build-debug && "/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_autogen /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/roi2csv_autogen.dir/AutogenInfo.json Debug && "/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E touch /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/roi2csv_autogen/timestamp && "/Users/ilya/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_transform_depfile Ninja gccdepfile /Users/ilya/CLionProjects/roi2csv /Users/ilya/CLionProjects/roi2csv /Users/ilya/CLionProjects/roi2csv/cmake-build-debug /Users/ilya/CLionProjects/roi2csv/cmake-build-debug /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/roi2csv_autogen/deps /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/d/017617da5c18cff2137d7e9668e137cc7ee9ad7fe9bee65a7d22e73f09ed5174.d
+  DESC = Automatic MOC and UIC for target roi2csv
+  depfile = /Users/ilya/CLionProjects/roi2csv/cmake-build-debug/CMakeFiles/d/017617da5c18cff2137d7e9668e137cc7ee9ad7fe9bee65a7d22e73f09ed5174.d
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/roi2csv_autogen_timestamp_deps
+
+build CMakeFiles/roi2csv_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/roi2csv_autogen_timestamp_deps: phony /usr/local/lib/libdcmtkcharls.16.3.6.6.dylib /usr/local/lib/libdcmtls.16.3.6.6.dylib /usr/local/lib/libijg8.16.3.6.6.dylib /usr/local/lib/libijg12.16.3.6.6.dylib /usr/local/lib/libijg16.16.3.6.6.dylib /usr/local/lib/libdcmjpls.16.3.6.6.dylib /usr/local/Cellar/qt@5/5.15.5_2/lib/QtCore.framework/QtCore /usr/local/lib/libdcmpstat.16.3.6.6.dylib /usr/local/lib/libdcmrt.16.3.6.6.dylib /usr/local/lib/libdcmiod.16.3.6.6.dylib /usr/local/lib/libdcmfg.16.3.6.6.dylib /usr/local/lib/libdcmseg.16.3.6.6.dylib /usr/local/lib/libdcmtract.16.3.6.6.dylib /usr/local/lib/libdcmpmap.16.3.6.6.dylib /usr/local/lib/libdcmect.16.3.6.6.dylib /usr/local/lib/liboflog.16.3.6.6.dylib /usr/local/lib/libdcmdata.16.3.6.6.dylib /usr/local/lib/libi2d.16.3.6.6.dylib /usr/local/lib/libdcmimgle.16.3.6.6.dylib /usr/local/lib/libdcmimage.16.3.6.6.dylib /usr/local/lib/libdcmjpeg.16.3.6.6.dylib /usr/local/Cellar/qt@5/5.15.5_2/bin/moc /usr/local/lib/libofstd.16.3.6.6.dylib /usr/local/lib/libdcmnet.16.3.6.6.dylib /usr/local/lib/libdcmsr.16.3.6.6.dylib /usr/local/lib/libcmr.16.3.6.6.dylib /usr/local/lib/libdcmdsig.16.3.6.6.dylib /usr/local/lib/libdcmwlm.16.3.6.6.dylib /usr/local/lib/libdcmqrdb.16.3.6.6.dylib
+
+
+#############################################
+# Phony custom command for CMakeFiles/roi2csv_autogen
+
+build CMakeFiles/roi2csv_autogen | ${cmake_ninja_workdir}CMakeFiles/roi2csv_autogen: phony roi2csv_autogen/timestamp || roi2csv_autogen_timestamp_deps
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/ilya/CLionProjects/roi2csv/cmake-build-debug
+
+build all: phony roi2csv
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseArguments.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDCMTK.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5/Qt5Config.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5/Qt5ConfigVersion.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5/Qt5ModuleLocation.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/local/lib/cmake/dcmtk/DCMTKConfig.cmake /usr/local/lib/cmake/dcmtk/DCMTKConfigVersion.cmake /usr/local/lib/cmake/dcmtk/DCMTKTargets-release.cmake /usr/local/lib/cmake/dcmtk/DCMTKTargets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseArguments.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDCMTK.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/ilya/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5/Qt5Config.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5/Qt5ConfigVersion.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5/Qt5ModuleLocation.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/local/Cellar/qt@5/5.15.5_2/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/local/lib/cmake/dcmtk/DCMTKConfig.cmake /usr/local/lib/cmake/dcmtk/DCMTKConfigVersion.cmake /usr/local/lib/cmake/dcmtk/DCMTKTargets-release.cmake /usr/local/lib/cmake/dcmtk/DCMTKTargets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
+  CONFIG = Debug
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN CMakeFiles/clean.additional
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
